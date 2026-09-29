@@ -1,0 +1,11 @@
+[project]
+name = "walter-stats"
+version = "0.1.0"
+description = "Statistical tests for the walter project"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.4.6",
+    "pandas>=3.0.6",
+    "scipy>=1.17.1",
+]
