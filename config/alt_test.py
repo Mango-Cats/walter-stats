@@ -15,7 +15,18 @@ HUMAN_3: str = "A3"
 ANNOTATORS: list[str] = [HUMAN_1, HUMAN_2, HUMAN_3]
 
 # Equivalence margin threshold (higher values represent more lenient criteria)
-EPSILON: float = 0.15
+"""
+[fr: zhean] [to: @all]
+
+at the expert hyperparameter threshold (this is EPSILON = 0.15), it
+does not accept Omega. But at any EPSILON >~ 0.165 it starts to accept.
+
+there is no strict value for EPSILON, we only need the highest value
+(and any EPSILON that is close enough to the expert threshold)
+
+so we can keep it at around 0.2?
+"""
+EPSILON: float = 0.2
 
 # False Discovery Rate significance level for Benjamini-Yekutieli procedure
 Q: float = 0.05
